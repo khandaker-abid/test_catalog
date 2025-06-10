@@ -2,6 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
+.classes {
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.classes h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+.classCard {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.classCard:hover {
+  transform: translateY(-5px);
+}
+
+.classCard img {
+  display: block;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  align-items: center;
+}
+
+.classCard h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.classDetailsCard {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.classDetailsCard img {
+  display: block;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  align-items: center;
+}
+
+.classDetailsCard h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/*adds some spacing inbetween text in the class view*/
+.classDetailsCard > * {
+  margin-bottom: 1rem; 
+}
+
+.teacher {
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.teacher h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .classes-container {
+    padding: 2rem 1rem;
+  }
+
+  .classes-container h1 {
+    font-size: 2rem;
+  }
+
+  .class-card {
+    padding: 1.5rem;
+  }
+
+  .class-card img {
+    height: 180px;
+  }
+
+  .class-details-container,
+  .teacher-details-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .class-details-card,
+  .teacher-details-card {
+    padding: 2rem;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
