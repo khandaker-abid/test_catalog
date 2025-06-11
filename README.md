@@ -12,3 +12,8 @@ Note that you must create a .env.local file locally in your repo folder to run t
 NEXT_PUBLIC_SUPABASE_URL=https://ymfqvniqnaztdwupsxux.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltZnF2bmlxbmF6dGR3dXBzeHV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk1NzY3MjksImV4cCI6MjA2NTE1MjcyOX0.BoUeIfzf8mu1pDRM9S-ST6_uvDXveUFPsJs3mIp3Mck
 ```
+Also, add a next-env.d.ts file and paste the following:
+```
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
+```
